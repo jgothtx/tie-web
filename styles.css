@@ -1,0 +1,361 @@
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif; /* Replace with Credera's font if available */
+    color: #333;
+    line-height: 1.6;
+  }
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+  h2 { font-size: 2em; margin-bottom: 0.5em; }
+  h3 { font-size: 1.3em; margin: 0.5em 0; }
+  p { margin-bottom: 1em; }
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em 0;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    z-index: 1000;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+  }
+  .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+  }
+  .navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  .navbar li a:hover {
+    color: #0070ad; /* Hover color (Credera blue) */
+  }
+  .nav-cta {
+    background: #0070ad; /* Credera accent color */
+    color: #fff !important;
+    padding: 0.5em 0.9em;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .nav-cta:hover {
+    background: #005b85;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #f5f5f5 url('images/hero-bg.jpg') no-repeat center/cover; /* Placeholder for background image */
+    text-align: center;
+    padding: 4em 1em;
+    position: relative;
+  }
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .book-cover {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  .tagline {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 1em;
+  }
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .primary-btn {
+    background: #0070ad;
+    color: #fff;
+  }
+  .primary-btn:hover {
+    background: #005b85;
+  }
+  .secondary-btn {
+    background: #eaeaea;
+    color: #333;
+  }
+  .secondary-btn:hover {
+    background: #d5d5d5;
+  }
+  
+  /* About the Book */
+  .about-book {
+    background: #fff;
+  }
+  .about-book h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .about-book p {
+    font-size: 1.1em;
+  }
+  .key-insights {
+    list-style: disc inside;
+    margin: 1em 0;
+    padding-left: 1em;
+  }
+  .key-insights li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Endorsements */
+  .endorsements {
+    background: #f9fafb;
+    text-align: center;
+    padding-bottom: 3em;
+  }
+  .endorsements h2 {
+    margin-bottom: 1em;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 2em;
+  }
+  .testimonials blockquote {
+    font-style: italic;
+    margin: 0 auto;
+    max-width: 700px;
+    position: relative;
+    padding: 0.5em 1em 1em;
+  }
+  .testimonials blockquote:before {
+    content: "Ò";
+    font-size: 3em;
+    color: #ccc;
+    position: absolute;
+    left: -0.2em;
+    top: -0.2em;
+  }
+  .testimonials footer {
+    text-align: right;
+    font-style: normal;
+    margin-top: 0.5em;
+    color: #555;
+  }
+  .trust-logos {
+    margin-bottom: 1em;
+  }
+  .trust-logos img {
+    max-height: 40px;
+    margin: 0 10px;
+    opacity: 0.8;
+  }
+  .rating-badge {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Authors Section */
+  .authors {
+    background: #fff;
+  }
+  .authors h2 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .author-bios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .author {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+  .author-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+  }
+  .author-title {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 0.5em;
+  }
+  .author-desc {
+    font-size: 0.95em;
+    text-align: left;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  /* Free Chapter Section */
+  .free-chapter {
+    background: #e9f7ff;
+    text-align: center;
+    padding: 3em 1em;
+  }
+  .free-chapter h2 {
+    margin-bottom: 0.5em;
+  }
+  .download-form {
+    margin-top: 1em;
+  }
+  .download-form input[type="email"] {
+    padding: 0.7em;
+    width: 250px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .download-form button {
+    margin-left: 0.5em;
+  }
+  .form-note {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 0.5em;
+  }
+  
+  /* Contact/Engage Section */
+  .contact {
+    background: #fff;
+  }
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .engage-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .engage-box {
+    flex: 1 1 45%;
+    background: #f5f5f5;
+    padding: 1.5em;
+    border-radius: 8px;
+  }
+  .engage-box h3 {
+    margin-bottom: 0.5em;
+  }
+  .engage-box p {
+    margin-bottom: 1em;
+    font-size: 0.95em;
+  }
+  .engage-box .btn {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5em;
+  }
+  
+  /* Resources Section */
+  .resources {
+    background: #f9fafb;
+  }
+  .resources h2 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .resources-intro {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .resource-item h3 {
+    margin-bottom: 0.3em;
+  }
+  .resource-item p {
+    font-size: 0.95em;
+  }
+  .resource-item a {
+    color: #0070ad;
+    text-decoration: none;
+  }
+  .resource-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em;
+  }
+  .footer .social-links a {
+    color: #fff;
+    margin: 0 0.5em;
+    text-decoration: none;
+  }
+  .footer .social-links a:hover {
+    text-decoration: underline;
+  }
+  .footer-info {
+    margin-top: 1em;
+    font-size: 0.9em;
+  }
+  .footer-info a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content {
+      text-align: center;
+    }
+    .hero-buttons {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+    .author-bios {
+      flex-direction: column;
+      align-items: center;
+    }
+    .engage-options {
+      flex-direction: column;
+    }
+  }
+  
